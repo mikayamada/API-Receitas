@@ -1,6 +1,6 @@
 const express = require('express')
 const routes = express.Router()
-
+const mysql = require('../mysql').pool;
 
 let db = [
     { '1': { Nome: 'Cliente 1', Idade: '20'}},
